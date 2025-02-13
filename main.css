@@ -8,10 +8,22 @@ body{
     max-width: 1200px;
     margin:0 auto;
 }
-.backGr>h5.date{
+dl.dayWrap>dt.daybutton{
+    line-height:2.5;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
     box-shadow:4px 4px 10px#555;
     border-radius:4px;
     padding:0 5px;
+}
+dl.dayWrap>dd.daycontent{
+    margin: 0;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height .5s ease-out;
 }
 
 .scroll-btn {
