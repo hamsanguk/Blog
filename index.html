@@ -334,6 +334,36 @@
                 <dd>flex-basis: 아이템의 기본크기</dd>
                 <dd>align-self:특정 아이템의 교차축 정렬</dd>
             </dl>
+            <h4>grid 정렬</h4>
+            <p>
+                flex와 달리 행과 열을 동시에 제어할 수 있어,복잡한 레이아웃에도 적합하다 <br>
+                grid컨테이너:grid 레이아웃 적용된 부모요소 (관련속성은 부모요소에 설정) <br>
+                grid아이템:컨테이너 안 포함된 자식요소 행과 열에 배치되어, 위치와 크기를 설정
+            </p>
+            <dl>
+                <dt>grid 컨테이너 속성</dt>
+                <dd>display:grid</dd>
+                <dd>grid-template-rows:행 크기 설정</dd>
+                <dd>grid-template-column:열 크기 설정</dd>
+                <dd>gap:행과 열 사이 간격설정</dd>
+            </dl>
+            <dl>
+                <dt>grid아이템 속성</dt>
+                <dd>grid-column:아이템이 차지할 열 범위</dd>
+                <dd>grid-row:아이템이 차지할 행 범위</dd>
+                <dd>justify-self:특정 아이템 수평정렬</dd>
+                <dd>align-self:특정 아이템의 수직 정렬</dd>
+            </dl>
+            <h4>media querries</h4>
+            <p>화면의 크기,해상도 방향에따는 스타일 적용, 반응형웹디자인에 사용된다</p>
+            <ul>
+                <li>@media (max-width:770px) 화면너비 770px이하일때 적용될 스타일</li>
+                <li>@media (min-width:1200px) 화면너비 1200px이상일때 적용될 스타일</li>
+                <li>orientation:디바이스방향을 기준 landscape,portrait @media (orientation:landscape)</li>
+                <li>resolution:해상도(dpi) 기준 스타일적용 @media (min-resolution:300dpi)</li>
+                <li></li>
+            </ul>
+
     </div>
 </body>
 </html>
