@@ -271,11 +271,69 @@
             header:title,meta
             body/특징은 의미가 부여된(sementic Tag)태그를 사용하여 검색엔진이 사이트를 쉽게 분석할 수 있도록 의도한다:h(n),nav,main,article,section,footer
         </p>
-
-
-        
         <hr>
+        <h5 class="date">25.2.13 day 9</h5>
+        <h4>CSS(castading style sheet)</h4>
+        <p>html만 작성된 웹페이지에 스타일과 레이아웃 정의하는 언어</p>
+        <dl>
+            <dt>css주요 특징</dt>
+            <dd>스타일링 분리</dd>
+            <dd>반응형 디자인</dd>
+            <dd>계층적 구조</dd>
+        </dl>
+        <h4>id와 class의 차이점</h4>
+        <p>
+            id:문서 내에서 고유한 선택자 이름 <br>
+            class: 문서내에서 여러 이름을 선택할 수 있고, 동일한 속성 값을 적용한다
+        </p>
+        <h3>css색상지정</h3>
+        <p>
+            16진수 #red/green/blue / rgb(,,)255가 100%, 마지막에 .n 은 투명도 1이 100% <br>
+            hsl(hue,saturation,lightness/색상,채도,명도) color:hsl(120,100%,50%) <br>
+            그라데이션 background: linear-gradient(to bottom, #000, #999)
+        </p>
+        <h3>css 폰트와 텍스트</h3>
+        <h4>font</h4>
+        <p>
+            글꼴 설정 font-family:'Arial','Helvetica', sans-sefif <br>
+            (단축속성)font: font-style,font-variant,font-weight,font-size/lh,font-family <br>
+            ex] font: italic small-caps bold 16px/1.5 'Georgia', serif;
+        </p>
+        <h4>text</h4>
+        <p>
+            font-size 단위 : px em % rem <br>
+            text-align:left,right,center,justify <br>
+            letter-spacing:문자간격 양수는 간격 넓어지고, 음수는 좁아진다 <br>
+            text-transform:uppercase/lowercase/capitalize <br>
+            text-decoration: underline/line-through/none
+        </p>
+        <h4>버튼 스타일링</h4>
+            <ul>
+                <li>:hover 마우스 클릭직전상태</li>
+                <li>:active 클릭하는 동안</li>
+                <li>:visit 클릭한 후에</li>
+            </ul>
+            <p>transition:bgc, 0.3, ease  상태변환시 부드러운 애니메이션 효과</p>
+            <h4>flexbox 정렬</h4>
+            <p>
+                요소배치와 컨테이너 안의 아이템의 크기,간격 정렬방식을 제어
+                컨테이너와 아이템별로 적용을 해야 할 속성이 나눠진다.
+            </p>
+            <dl>
+                <dt>[컨테이너 속성]</dt>
+                <dd>display:flex flexbox레이아웃을 활성화</dd>
+                <dd>flex-direction 아이템 정렬 방향 row,rowreverse,column(아래에서 위),column-reverse</dd>
+                <dd>justify-content 주 축에서 정렬방식 flex-start,flex-end,space-between/around</dd>
+                <dd>align-items 교차축에서 정령방식 stretch,flex-start,flex-end,center,baseline</dd>
+                <dd>flex-wrap 아이템이 한 줄을 초과시 줄바꿈을 설정 nowrap,wrap,wrap-reverse</dd>
+            </dl>
+            <dl>
+                <dt>[flexbox>아이템 속성]</dt>
+                <dd>flex-grow:아이템이 남은 공간을 차지하는 비율 </dd>
+                <dd>flex-shirnk:아이템이 줄어드는 비율</dd>
+                <dd>flex-basis: 아이템의 기본크기</dd>
+                <dd>align-self:특정 아이템의 교차축 정렬</dd>
+            </dl>
     </div>
 </body>
-
 </html>
