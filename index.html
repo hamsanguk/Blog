@@ -402,6 +402,62 @@
             </ul>
         </dd>
         </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.14 day 10</dt>
+            <dd class="daycontent">
+                <h3>javascript 타입</h3>
+                <p>타입에 종류와 기능을 알아야 요류를 방지하고 효율적 코드작성 가능</p>
+                <h4>primitive(원시) 타입</h4>
+                <ul>
+                    <li>number</li>
+                    <li>string</li>
+                    <li>boolean</li>
+                    <li>undefind</li>
+                    <li>null</li>
+                    <li>symbol ex] const key=Symbol("key")</li>
+                </ul>
+                
+                <p>타입 확인하는 법 console.log(typeof data)</p>
+                <h4>number타입</h4>
+                <p>일반적인 사칙연산 가능, 복잡한 계산을 위해서는 Math 내장객체는 한다</p>
+                <ul>
+                    <li>Math.floor():괄호의 수를 내림처리 반환</li>
+                    <li>.ceil():괄호 안 수를 올림처리 반환</li>
+                    <li>.round():괄호 안 수를 반올림</li>
+                    <li>.abs():절대값 반환</li>
+                    <li>.squr():루트값</li>
+                    <li>.pow( , ):첫번째 수를 밑,다음 수를 지수인 수를 반환</li>
+                </ul>
+                <h4>연산자(comparison operator)</h4>
+                <ul>
+                    <li>동치연산 ===:같다면 true,!==:다르면 true</li>
+                    <li>비교연산 >,<,>=,<=</li>
+                    <li>논리합(OR) || :두 값 중 하나라도 true 이면 true</li>
+                    <li>논리곱(AND) &&: 두 값 중 하나라도 false 이면 false</li>
+                </ul>
+                <p>
+                    함수의 선언문과 표현식 구분하기 <br>
+                    선언문 function greeting(){console("함수표현식")} <br>
+                    표현식 const greeting = function(){console.log("함수선언문")}
+                </p>
+                <h4>메개변수와 전달인자</h4>
+                <p>
+                    function greeting(메게변수){ <br>
+                    console.log('hello'+ 매개변수)}<br>
+                    함수를 호출할 때 소괄호 안에 값을 넣음으로써 매개변수에 값을 할당할 수 있는것이 전달인자 
+                </p>
+                <h4>return</h4>
+                <p>
+                    내부 스코프에서 실행한 결과를 스코프 외부에서 사용하도록 반돤한다는 의미 <br>
+                    return은 종료의 의미도 가지고 있어서 return뒤에 실행되는 코드는 실행되지 <br>
+                    않는다
+                </p>
+
+
+
+
+            </dd>
+        </dl>
 
     </div>
 </body>
