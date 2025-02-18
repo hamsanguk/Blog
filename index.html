@@ -556,6 +556,30 @@
                 </p>
             </dd>
         </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.17 day12계산기앱 구현간 js,html연결문법(DOM)</dt>
+            <dd class="daycontent">
+                <h4>html요소 JS에서 이용</h4>
+                <p>
+                    <h4>js파일에서</h4>
+                    <ul>
+                        <li>document.querySelector('.'):클래스로 요소찾기</li>
+                        <li>document.querySelectorAll('.'):동일한 클래스 모두</li>
+                        <li>.getElementById(''):id를 가진 요소</li>
+                    </ul>
+                    <h4>찾은 요소에서</h4>
+                    <p>
+                        클릭할 수 있는 요소라면<br>
+                        .addEventListner('click',function(event)){ <br>
+                            const target = event.target(클릭 이벤트 발생한 해당 요소)<br>
+                                action = target.classList[]<br>
+                                buttonContent = target.textContent<br>
+                        }
+
+                    </p>
+                </p>
+            </dd>
+        </dl>
 
     </div>
 </body>
