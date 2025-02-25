@@ -707,15 +707,9 @@
                     filter(callbackfn, argmt)
                     callbackfn: 함수를 한번씩 호출하고, callbackfn이 참일때 반환하는 모든값을 새 배열로
 
-
-
-
-
                     map:각각의 배열요소를 맵핑하여 동일한 적용을 할당하여 새 배열 완성
                     map(callbackfn(arg){})
                     arg:배열각각의 요소
-
-
 
                     reduce
                     - 배열의 값들을 하나로 합치고 싶을 때 -> 숫자 합계, 문자열 연결(concatnation)
@@ -728,6 +722,52 @@
                     - array: reduce를 호출한 배열
                     - 초기값
                 </p>
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.25 day17</dt>
+            <dd class="daycontent">
+                <h3>객체지향 ObjectOrientedProgramming</h3>
+                <p>
+                    사람이 세계를 보고 이해하는 방법을 흉내낸 방법론
+                    하나의 모델이 되는 청사진(Class), 청사진을 기반으로 한 객체(object) instance
+                <h4>Class 사용시 전체적인 모양</h4>
+                class Car = {
+                constructor(brand, name, color){}
+                }
+                const avante = new Car('hyundai','avante',black) (<=생성된 인스턴스) </p>
+                    <h4>this</h4>
+                    class 에서 사용되어 인스턴스로 넘어와서 인스턴스 자체를 지칭 class 내부에서는 화살표함수 사용 불가
+                    <h4>Method</h4>
+                    클래스에서 정의되는 함수, 인스턴스에서 사용
+                    구현방법
+                    es5: class Car(){} 외부에서 Car.prototype.refuel=()=>{...}
+                    es6: class Car(){
+                    constructor(){class가 객체이기 때문에 let,const가 필요하지 않다,constructor는 한번만 시행한다}
+                    refuel(){ ...}
+                    }
+                    </p>
+                    <p>
+                        애플리케이션을 설계할때는 객체지향을 이해하고 응용해야 좋은결과가 나온다
+                        객체지향의 주요 개념 4개
+                        캡슐화(Encapsulation)/상속(Inheritance)/추상화(Abstraction)/다양성(Polimorphism)
+                        캡슐화:필요한 정보만 보여주는 것(스마트폰의 uiㅇ, 내부회로 x), 은닉화는 내부 데이터나 구현이 외부로
+                        노출되지 않는의미도 포함/객체 외부에서는 필요한 동작(메서드)만 노출시켜야된다/엄격한 클래스는 속성의 직접접근을 막고
+                        설정하는 함수(setter),불러오는 함수(getter)를 철저하게 나눈다/ 데이터(속성)와 기능(메서드)를 따로 정의하는것이아닌 객체안에 묶어논것
+                        느슨하게 결합되있는 상태이며 이는 코드 작성순서대로 실행이 아닌,코드가 상징하는 실제 모습과 닮게 코드를 모아 결합하는것을 의미
+
+                        추상화:복잡한것을 감추고, 실제보여지는 부분(인터페이스)만 단순하게 만드는 개념
+                        상속:재사용, 물려주는 속성이나 메서드
+                        다형성:같은input 다른 output들/
+                    </p>
+                    <p>
+                        객체지향의 추상화는, 속성과 메서드의 이름만 노출시켜 사용을 단순화한다는 의미
+                        ts에서 인터페이스는 '이 클래스는 메서드 이름이 의도한대로 작동'
+                    </p>
+                    <p>
+                    <h4>prototype</h4>
+                    프로토타입은 원형객체
+                    </p>
             </dd>
         </dl>
 
