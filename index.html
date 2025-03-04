@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공부 블로그</title>
-    
+
     <link rel="stylesheet" href="./main.css">
 
     <script defer src="./main.js"></script>
-    
+
 </head>
 
 <body>
@@ -27,12 +27,13 @@
             </dt>
             <dd class="daycontent">
                 <p>블록체인의 최초 탄생 목적은 암호화폐가 아닌 디지털 문서의 타임 스탬프를 보장하기 위한 아이디어에서 시작되었다.
-                    세계 금융위기가 발생한 2008.10.31, 기존 금융시스템과 중앙화된 정책에 대항한 사회운동가 집단(사이퍼 펑크)이 탈중앙화된 암호화폐 '비트코인 백서'를 사토시로부터 매일 수신하였다.
+                    세계 금융위기가 발생한 2008.10.31, 기존 금융시스템과 중앙화된 정책에 대항한 사회운동가 집단(사이퍼 펑크)이 탈중앙화된 암호화폐 '비트코인 백서'를 사토시로부터 매일
+                    수신하였다.
                     이 둘의 공통점은 신뢰가 없는 가정 속에 신뢰할 수 있는 시스템을 구축하려는 점이다.</p>
-    
+
                 <h3>화폐의 조건</h3>
                 <p>화폐의 조건으로 부합하기 위해서는 다음 세 가지 조건을 충족해야 한다.</p>
-    
+
                 <ul>
                     <li>교환 매개체: 물물교환의 불편함을 없애고 편리하게 교환할 수 있는 기능</li>
                     <li>가치 척도의 기능: 화폐가 어떤 물건의 가치를 재는 잣대로써 기능</li>
@@ -47,150 +48,151 @@
             </dd>
         </dl>
         <dl class="dayWrap">
-        <dt class="daybutton"> 25.2.4 day 2[블록채인 일부 기능 (hash,키 종류)]</dt>
-        <dd class="daycontent">
-        <h3>Hash</h3>
-        <p>데이터의 크기에 상관없이 고정된 크기의 출력 값으로 변환되어 암호화와 무결성을 보장한다. <br>
-            무결성: 데이터가 전송이나 변화되는 과정에서 오해나 손실없이 시스템이 원하는대로 작동하는것,보안과 정확성을 포함
-        </p>
-        <p>오늘날 해시에 사용되는 대표적인 함수는 SHA-256함수 이며, 256비트(32바이트)의 고정된 출력값이다</p>
-        <h3>암호화폐에서 해시의 목적</h3>
-        <p>각 블록은 [블록해시 값, 헤더, 바디]로 구성되며, 블록 해시 값은 이전 블록의 해시 값, <br>
-            해당 블록의 트랜잭션을 비롯한 다양한 정보들이 인자가 되어 해싱된 결과이다 <br>
-            트랜잭션 등에서 약간의 변화가 생기면 쉽게 식별할 수 있을 정도로 해시 값이 변한다.
-        </p>
-        <h5>블록 간 연결성 유지와 변경사항(고의로 조작된 블록)탐지에 사용된다</h5>
-        <h3>개인 키, 공개 키의 사용</h3>
-        <ul>
-            <li>대칭키: 암호화와 복호와가 같은 키로 관리된다</li>
-            <li>비대칭키:개인 키와 공개 키가 같이 사용되며 관리된다</li>
-        </ul>
-        <p>블록체인은 비대칭키 암호와 방식</p>
-        <h5>개인 키와 공개 키 생성과정</h5>
-        <ol>
-            <li>개인 키:임의의 난수가 생성되며, 숫자형에서 16진수로 변환되거나 Base58Check 인코딩으로 뭄자형으로 변환</li>
-            <li>공개 키:개인 키를 기반으로 타원곡선 암호화로 파생된다</li>
-            <li>공개 키는 다시 해싱되어 주소가 된다</li>
-        </ol>
-        <dl>
-            <dt>블록체인에서 공개키 활용</dt>
-            <dd>주소 생성</dd>
-            <dd>검증</dd>
+            <dt class="daybutton"> 25.2.4 day 2[블록채인 일부 기능 (hash,키 종류)]</dt>
+            <dd class="daycontent">
+                <h3>Hash</h3>
+                <p>데이터의 크기에 상관없이 고정된 크기의 출력 값으로 변환되어 암호화와 무결성을 보장한다. <br>
+                    무결성: 데이터가 전송이나 변화되는 과정에서 오해나 손실없이 시스템이 원하는대로 작동하는것,보안과 정확성을 포함
+                </p>
+                <p>오늘날 해시에 사용되는 대표적인 함수는 SHA-256함수 이며, 256비트(32바이트)의 고정된 출력값이다</p>
+                <h3>암호화폐에서 해시의 목적</h3>
+                <p>각 블록은 [블록해시 값, 헤더, 바디]로 구성되며, 블록 해시 값은 이전 블록의 해시 값, <br>
+                    해당 블록의 트랜잭션을 비롯한 다양한 정보들이 인자가 되어 해싱된 결과이다 <br>
+                    트랜잭션 등에서 약간의 변화가 생기면 쉽게 식별할 수 있을 정도로 해시 값이 변한다.
+                </p>
+                <h5>블록 간 연결성 유지와 변경사항(고의로 조작된 블록)탐지에 사용된다</h5>
+                <h3>개인 키, 공개 키의 사용</h3>
+                <ul>
+                    <li>대칭키: 암호화와 복호와가 같은 키로 관리된다</li>
+                    <li>비대칭키:개인 키와 공개 키가 같이 사용되며 관리된다</li>
+                </ul>
+                <p>블록체인은 비대칭키 암호와 방식</p>
+                <h5>개인 키와 공개 키 생성과정</h5>
+                <ol>
+                    <li>개인 키:임의의 난수가 생성되며, 숫자형에서 16진수로 변환되거나 Base58Check 인코딩으로 뭄자형으로 변환</li>
+                    <li>공개 키:개인 키를 기반으로 타원곡선 암호화로 파생된다</li>
+                    <li>공개 키는 다시 해싱되어 주소가 된다</li>
+                </ol>
+                <dl>
+                    <dt>블록체인에서 공개키 활용</dt>
+                    <dd>주소 생성</dd>
+                    <dd>검증</dd>
+                </dl>
+                <dl>
+                    <dt>개인 키 활용</dt>
+                    <dd>트랜잭션 서명</dd>
+                    <dd>자산 제어</dd>
+                    <dd>소유를 증명하려는 저작물 암호화에 사용</dd>
+                </dl>
+            </dd>
         </dl>
-        <dl>
-            <dt>개인 키 활용</dt>
-            <dd>트랜잭션 서명</dd>
-            <dd>자산 제어</dd>
-            <dd>소유를 증명하려는 저작물 암호화에 사용</dd>
-        </dl>
-    </dd>
-    </dl>
         <dl class="dayWrap">
             <dt class="daybutton">25.2.5 day 3</dt>
             <dd class="daycontent">
-        <h4>블록의 구조</h4>
-        <ul>
-            <li>블록해시:블록헤더의 정보들을 종합적으로 해시한 결과물</li>
-            <li>헤더:이전블록해시,버전,난이도,머클루트,time,nonce 등의 정보를 포함한다</li>
-            <li>바디:송금기록,요청,검증을 위해 사용되는 트랜잭션들</li>
-        </ul>
-        <p>
-            머클루트는 머클트리에서 비롯되는데 머클트리의 동작은 블록바디의 트랜잭션들을 짝지어서 해쉬한 결과를 다시 상위에서 짝지어서
-            해쉬, 최종적으로 머클루트가 된다
-            머클루트는 블록채인 네트워크내의 PoW 작업증명 역할을 수행
-        </p>
-        <h5>UTXO(Unspend Transaction Output)</h5>
-        <p>대표적으로 비트코인의 겨래시스템으로 미사용 상태가 실제 자산, 사라진 상태는 사용됨 <br>
-            개인 키 내부 utxo가 미사용된 코인의 나열 = 실재 자산
-        </p>
-        <p>블록바디의 트랜잭션 구조 송금기록,요청,검증을 위해 사용되는 데이터구조
-            크게 입력과 출력으로 구성</p>
-        <dl>
-            <dt>하나의 트랜잭션 구조</dt>
-            <dd>버전:트랜잭션 형식을 정의하는 숫자필드,현재는 비트코인 ver2 or 1(4byte)</dd>
-            <dd>입력:UTXO이전의 transaction출력을 참조(송신자 서명 포함)
+                <h4>블록의 구조</h4>
                 <ul>
-                    <li>transaction hash:이전 트랜잭션의 해시 값</li>
-                    <li>출력인덱스:참조하는 tx에서 어떤 출력(index) 사용하는지</li>
-                    <li>스크립트 길이:잠금해제 스크립트</li>
-                    <li>스크립트 서명:이전 tx출력 소유권 증명목적 구성[서명,공개키]</li>
-                    <li>시퀸스번호:트랜잭션 취소나 변경 가능성 기입할 필드(잘 안쓴다)</li>
+                    <li>블록해시:블록헤더의 정보들을 종합적으로 해시한 결과물</li>
+                    <li>헤더:이전블록해시,버전,난이도,머클루트,time,nonce 등의 정보를 포함한다</li>
+                    <li>바디:송금기록,요청,검증을 위해 사용되는 트랜잭션들</li>
                 </ul>
-            </dd>
-            <dd>
-                <ul>
-                    <li>출력:다음 수신자에게 전달될 정보. 한 tx는 여러 출력을 보낼수 있다</li>
-                    <li>금액(value):해당출력에포함된 비트코인 가격 단위 (1bc = 1m 사토시)</li>
-                    <li>스크립트길이:잠금 스크립트의 길이</li>
-                    <li>잠금스크립트:비트코인잠금(수신자주소설정)하는 스크립트,일반적으로 p2pkh스크립트형식 pay to pay public key hash</li>
-                </ul>
+                <p>
+                    머클루트는 머클트리에서 비롯되는데 머클트리의 동작은 블록바디의 트랜잭션들을 짝지어서 해쉬한 결과를 다시 상위에서 짝지어서
+                    해쉬, 최종적으로 머클루트가 된다
+                    머클루트는 블록채인 네트워크내의 PoW 작업증명 역할을 수행
+                </p>
+                <h5>UTXO(Unspend Transaction Output)</h5>
+                <p>대표적으로 비트코인의 겨래시스템으로 미사용 상태가 실제 자산, 사라진 상태는 사용됨 <br>
+                    개인 키 내부 utxo가 미사용된 코인의 나열 = 실재 자산
+                </p>
+                <p>블록바디의 트랜잭션 구조 송금기록,요청,검증을 위해 사용되는 데이터구조
+                    크게 입력과 출력으로 구성</p>
+                <dl>
+                    <dt>하나의 트랜잭션 구조</dt>
+                    <dd>버전:트랜잭션 형식을 정의하는 숫자필드,현재는 비트코인 ver2 or 1(4byte)</dd>
+                    <dd>입력:UTXO이전의 transaction출력을 참조(송신자 서명 포함)
+                        <ul>
+                            <li>transaction hash:이전 트랜잭션의 해시 값</li>
+                            <li>출력인덱스:참조하는 tx에서 어떤 출력(index) 사용하는지</li>
+                            <li>스크립트 길이:잠금해제 스크립트</li>
+                            <li>스크립트 서명:이전 tx출력 소유권 증명목적 구성[서명,공개키]</li>
+                            <li>시퀸스번호:트랜잭션 취소나 변경 가능성 기입할 필드(잘 안쓴다)</li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li>출력:다음 수신자에게 전달될 정보. 한 tx는 여러 출력을 보낼수 있다</li>
+                            <li>금액(value):해당출력에포함된 비트코인 가격 단위 (1bc = 1m 사토시)</li>
+                            <li>스크립트길이:잠금 스크립트의 길이</li>
+                            <li>잠금스크립트:비트코인잠금(수신자주소설정)하는 스크립트,일반적으로 p2pkh스크립트형식 pay to pay public key hash</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <p>
+                    잠금스크립트,해재스크립트: 잠금-출력에서 사용 / 해제-입력에서 사용 <br>
+                    트랜잭션카운터:트랜잭션이 포함된 입출력 기록,별도저장 네트워크가 트랜잭션 크기를 빠르게 파악
+                </p>
+                <h4>트랜잭션의 흐름</h4>
+                <ol>
+                    <li>송신자는 입력에서 이전utxo참조</li>
+                    <li>해당 입력에 개인키로 디지털 서명후 스크립트에 포함</li>
+                    <li>송신자는 수신자 주소를 출력에 지정,잠금스크립트(공개키)생성</li>
+                    <li>수신자는 해제를 위해 공개키, 서명 재공/ 네트워크 노드는 입출력 검증 시행 (트랜잭션이 올바른지)</li>
+                </ol>
             </dd>
         </dl>
-        <p>
-            잠금스크립트,해재스크립트: 잠금-출력에서 사용 / 해제-입력에서 사용 <br>
-            트랜잭션카운터:트랜잭션이 포함된 입출력 기록,별도저장 네트워크가 트랜잭션 크기를 빠르게 파악
-        </p>
-        <h4>트랜잭션의 흐름</h4>
-        <ol>
-            <li>송신자는 입력에서 이전utxo참조</li>
-            <li>해당 입력에 개인키로 디지털 서명후 스크립트에 포함</li>
-            <li>송신자는 수신자 주소를 출력에 지정,잠금스크립트(공개키)생성</li>
-            <li>수신자는 해제를 위해 공개키, 서명 재공/ 네트워크 노드는 입출력 검증 시행 (트랜잭션이 올바른지)</li>
-        </ol>
-    </dd>
-    </dl>
 
         <dl class="dayWrap">
             <dt class="daybutton">
-        25.2.6 day 4</dt>
-        <dd class="daycontent">
-        <h3>블록채인 운영</h3>
-        <h4>node:블록채인 네트워크에 연결된 각각의 pc나 장치</h4>
-        <dl>
-            <dt>node별 역할의 종류</dt>
-            <dd>풀노드:전체를 저장하여 역할을 수행</dd>
-            <dd>라이트노드(SPV Simple Payment Verification):최소한의 헤더만 저장하여 머클루트는 트랜잭션 정보, 해시값은 연결성 검증</dd>
-            <dd>구조적으로는 풀노드와 동일하며,pow 합의알고리즘을 수행하여 블록 생성</dd>
-        </dl>
-        <dl>
-            <dt>블록채인은 DLT의 한 종류</dt>
-            <dd>분산원장기술 DLT(Distribute Ledger Technology):중앙서버의 데이터 독점관리가 아닌 여러 참여자(node)가 분산 저장는 데이터베이스의 일종 <br></dd>
-            <dd>특징:분산성 변경불가성 투명성 탈중앙성</dd>
-            <dd>종류:퍼블릭 분산원장, 프라이빗, 컨소시엄(특정 그룹내 프라이빗과 특성,목적이 비슷하다)</dd>
-        </dl>
-        <h5>DLT의 필요한 기술:합의 알고리즘, 암호화, 노드동기화</h5>
-        <ul>
-            <li>합의알고리즘:노드들이 데이터의 유효성과 순서를 검증하고, 동일기록을 유지하기위해 사용</li>
-            <li>합의알고리즘의 종류:pow(proof of work 작업증명),pos(proof of stake지분증명),pbft,...</li>
-            <li>[Chain Reorganization:채인리오르크]:모든 합의 알고리즘은 가장 긴 체인을 채택한다</li>
-        </ul>
-        <ul>
-            <li>pow 와 pos 비교</li>
-            <li>PoW의 특징(비트코인의 합의알고리즘): 작업의 양을 채택의 기준으로 삼는다(마이닝노드가 블록헤더의 충족된 난이도 해시값 생성까지 반복계산, <br>
-                유효한 해시값까지 많은 계산자원으로인한 전력소모
-                /경쟁/난이도 충족여부 확인하는 과정이 PoW)
-            </li>
-            <li>
-                Pos의 특징:Pow특징적인부분(많은에너지,높은진입장벽(고성능장비),해시파워=계산능력이 51%이상시 중앙화 or 독점가능) 개선위해 고안, <br>
-                네트워크 참여자 지분 기준으로 블록생성 합의 스태이킹(맡긴 돈과 그 시간이 클 수록 검증자 확률상승),네트워크 전체 유통량 51% 소유하기 어려움 <br>
-                ,단점: 검증자의 동시다발 서명가능(Nothing at Stake):계산자원없이 여러체인 작업가능한 구조라서 /초기자본 많은사람만 유리 <br>
-                단점보완방법:악의적 검증자는 slashing패널티 적용 ,DPos(Delegate:위임지분증명):사용자가 직접 블록생성이 아닌 투표로 위임자 선출 하여 대리로 작업수행
-            </li>
-        </ul>
+                25.2.6 day 4</dt>
+            <dd class="daycontent">
+                <h3>블록채인 운영</h3>
+                <h4>node:블록채인 네트워크에 연결된 각각의 pc나 장치</h4>
+                <dl>
+                    <dt>node별 역할의 종류</dt>
+                    <dd>풀노드:전체를 저장하여 역할을 수행</dd>
+                    <dd>라이트노드(SPV Simple Payment Verification):최소한의 헤더만 저장하여 머클루트는 트랜잭션 정보, 해시값은 연결성 검증</dd>
+                    <dd>구조적으로는 풀노드와 동일하며,pow 합의알고리즘을 수행하여 블록 생성</dd>
+                </dl>
+                <dl>
+                    <dt>블록채인은 DLT의 한 종류</dt>
+                    <dd>분산원장기술 DLT(Distribute Ledger Technology):중앙서버의 데이터 독점관리가 아닌 여러 참여자(node)가 분산 저장는 데이터베이스의 일종 <br>
+                    </dd>
+                    <dd>특징:분산성 변경불가성 투명성 탈중앙성</dd>
+                    <dd>종류:퍼블릭 분산원장, 프라이빗, 컨소시엄(특정 그룹내 프라이빗과 특성,목적이 비슷하다)</dd>
+                </dl>
+                <h5>DLT의 필요한 기술:합의 알고리즘, 암호화, 노드동기화</h5>
+                <ul>
+                    <li>합의알고리즘:노드들이 데이터의 유효성과 순서를 검증하고, 동일기록을 유지하기위해 사용</li>
+                    <li>합의알고리즘의 종류:pow(proof of work 작업증명),pos(proof of stake지분증명),pbft,...</li>
+                    <li>[Chain Reorganization:채인리오르크]:모든 합의 알고리즘은 가장 긴 체인을 채택한다</li>
+                </ul>
+                <ul>
+                    <li>pow 와 pos 비교</li>
+                    <li>PoW의 특징(비트코인의 합의알고리즘): 작업의 양을 채택의 기준으로 삼는다(마이닝노드가 블록헤더의 충족된 난이도 해시값 생성까지 반복계산, <br>
+                        유효한 해시값까지 많은 계산자원으로인한 전력소모
+                        /경쟁/난이도 충족여부 확인하는 과정이 PoW)
+                    </li>
+                    <li>
+                        Pos의 특징:Pow특징적인부분(많은에너지,높은진입장벽(고성능장비),해시파워=계산능력이 51%이상시 중앙화 or 독점가능) 개선위해 고안, <br>
+                        네트워크 참여자 지분 기준으로 블록생성 합의 스태이킹(맡긴 돈과 그 시간이 클 수록 검증자 확률상승),네트워크 전체 유통량 51% 소유하기 어려움 <br>
+                        ,단점: 검증자의 동시다발 서명가능(Nothing at Stake):계산자원없이 여러체인 작업가능한 구조라서 /초기자본 많은사람만 유리 <br>
+                        단점보완방법:악의적 검증자는 slashing패널티 적용 ,DPos(Delegate:위임지분증명):사용자가 직접 블록생성이 아닌 투표로 위임자 선출 하여 대리로 작업수행
+                    </li>
+                </ul>
 
-        <h3>블록의 생성과정</h3>
-        <ol>
-            <li>트랜잭션 생성,전파:거래내역이 생기며 트랜잭션 생성, 브로드캐스트로 네트워크의 다른노드들로 전파</li>
-            <li>트랜잭션수집:마이닝노드는 브로드캐스트된 유효 트랜잭션을 수집해 메모리풀에 저장</li>
-            <li>블록탬플릿생성:메모리풀에서 트랜잭션 선택하여 생성</li>
-            <li>합의알고리즘(pow,pos,특성에 따라 달라지는 등)</li>
-            <li>블록검증,전파:조건에 맞으면 블록 생성, 네트워킹되어 다른 노드들이 유효성을 검증</li>
-            <li>블록체인 연결</li>
-            <li>보상지금</li>
-            <li>새 블록 이후 체인 확장</li>
-        </ol>
-    </dd>
-    </dl>
+                <h3>블록의 생성과정</h3>
+                <ol>
+                    <li>트랜잭션 생성,전파:거래내역이 생기며 트랜잭션 생성, 브로드캐스트로 네트워크의 다른노드들로 전파</li>
+                    <li>트랜잭션수집:마이닝노드는 브로드캐스트된 유효 트랜잭션을 수집해 메모리풀에 저장</li>
+                    <li>블록탬플릿생성:메모리풀에서 트랜잭션 선택하여 생성</li>
+                    <li>합의알고리즘(pow,pos,특성에 따라 달라지는 등)</li>
+                    <li>블록검증,전파:조건에 맞으면 블록 생성, 네트워킹되어 다른 노드들이 유효성을 검증</li>
+                    <li>블록체인 연결</li>
+                    <li>보상지금</li>
+                    <li>새 블록 이후 체인 확장</li>
+                </ol>
+            </dd>
+        </dl>
 
         <dl class="dayWrap">
             <dt class="daybutton"> 25.2.7 day 5 기존 블록체인에서 차별화된 이더리움</dt>
@@ -200,7 +202,7 @@
                     튜링완정성(Turing Completeness):어떠한 계산 가능한 문제도, 적절한 알고리즘과 충분한 리소스(시간과 메모리)가 주어진다면 해결가능해야 함으로 <br>
                     while, for, if등의 루프 반복 조건문 실행이 가능해야 한다
                     기존의 비트코인의 트랜잭션 스크립트 언어는 튜링 불완전하며 비트코인은 디지털 통화의 역할만 부여되있다.
-                    비탈릭 부테린이라는 인물이 블록체인에 튜링완정성을 더하고싶어 이더리움이라는 새로운 블록체인 플랫폼을 개발했다 
+                    비탈릭 부테린이라는 인물이 블록체인에 튜링완정성을 더하고싶어 이더리움이라는 새로운 블록체인 플랫폼을 개발했다
                 </p>
                 <h5>이더리움의 핵심목표</h5>
                 <ul>
@@ -210,245 +212,246 @@
                     <li>프로그래밍 가능성 (Solidity)</li>
                 </ul>
                 <h3>비트코인과 이더리움의 차이</h3>
-            <h4>비트코인</h4>
-            <ul>
-                <li>UTXO모델:잔액추적이 아닌 미사용 거래 출력을 추적</li>
-                <li>nonce:채굴과정(난이도 조건충족까지 블록헤더 해시결과의 변수로 사용하기 위한 변수로 사용하기 위해 변경)</li>
-                <li>재한적인 프로그래밍가능성</li>
-                <li>가상머신X</li>
-            </ul>
-            <h4>이더리움</h4>
-            <ul>
-                <li>계정기반모델(Account-based):각 계정에 대한 잔액관리</li>
-                <li>nonce:재사용 방지목적의 각 계정에서 발생한 트랜잭션 순서관리</li>
-                <li>유연한 프로그래밍가능성</li>
-                <li>가상머신EVM</li>
-            </ul>
-            <h3>이더리움EVM</h3>
-            <p>
-                가상머신:사람이 작성한 코드와 하드웨어 사이 소프트웨어적으로 구현된 실행환경 <br>
-                실제로 존재하지 않아 가상머신이라 한다
-                이더리움 스마트계약은 Solidity라는 고급언어로 작성되어 EVM이 해석할수 없어 <br>
-                solc 컴파일러를 사용해 EVM친화적인 바이트코드로 변환
+                <h4>비트코인</h4>
+                <ul>
+                    <li>UTXO모델:잔액추적이 아닌 미사용 거래 출력을 추적</li>
+                    <li>nonce:채굴과정(난이도 조건충족까지 블록헤더 해시결과의 변수로 사용하기 위한 변수로 사용하기 위해 변경)</li>
+                    <li>재한적인 프로그래밍가능성</li>
+                    <li>가상머신X</li>
+                </ul>
+                <h4>이더리움</h4>
+                <ul>
+                    <li>계정기반모델(Account-based):각 계정에 대한 잔액관리</li>
+                    <li>nonce:재사용 방지목적의 각 계정에서 발생한 트랜잭션 순서관리</li>
+                    <li>유연한 프로그래밍가능성</li>
+                    <li>가상머신EVM</li>
+                </ul>
+                <h3>이더리움EVM</h3>
+                <p>
+                    가상머신:사람이 작성한 코드와 하드웨어 사이 소프트웨어적으로 구현된 실행환경 <br>
+                    실제로 존재하지 않아 가상머신이라 한다
+                    이더리움 스마트계약은 Solidity라는 고급언어로 작성되어 EVM이 해석할수 없어 <br>
+                    solc 컴파일러를 사용해 EVM친화적인 바이트코드로 변환
                 <ol>
                     <li>solidity -> solc compile [bytecode]</li>
                     <li>bytecode -> EVM</li>
                 </ol>
-            </p>
-            <h3>튜링완정성의 보완점</h3>
-            <p>
-                튜링 기능으로 인해 악의적으로 무한반복문을 사용하면 네트워크 자원이 낭비된다 <br>
-                이를 방지하기 위해 연산이 필요한 작업에 가스 비용을 부과,가스가 소진되면 그 트랜잭션을 중단시키는 매커니즘을 가진다
-            </p>
-            <ol>
-                <li>보안격리(sandboxing):evm은 계약간 충돌을 방지하며,잘못된 코드가 <br>
-                     네트워크나 다른 계약에 영향을 주지 않도록 격리된 실행환경을 제공
-                </li>
-                <li>gas:바이트코드 실행에는 가스비용이 소모</li>
-            </ol>
-        
+                </p>
+                <h3>튜링완정성의 보완점</h3>
+                <p>
+                    튜링 기능으로 인해 악의적으로 무한반복문을 사용하면 네트워크 자원이 낭비된다 <br>
+                    이를 방지하기 위해 연산이 필요한 작업에 가스 비용을 부과,가스가 소진되면 그 트랜잭션을 중단시키는 매커니즘을 가진다
+                </p>
+                <ol>
+                    <li>보안격리(sandboxing):evm은 계약간 충돌을 방지하며,잘못된 코드가 <br>
+                        네트워크나 다른 계약에 영향을 주지 않도록 격리된 실행환경을 제공
+                    </li>
+                    <li>gas:바이트코드 실행에는 가스비용이 소모</li>
+                </ol>
+
             </dd>
 
         </dl>
 
         <dl class="dayWrap">
-        <dt class="daybutton">25.2.10 day 6</dt>
-        <dd class="daycontent">
-        <h4>Internet 과 웹의 차이</h4>
-        <p>:인터넷은 물리적인 네트워크 인프라 이며, 웹은 인터넷상에서 정보를 표시한 서로 주고받거나 상호작용이 가능한 문서
-            인터넷은 도로, 자동차는 웹으로 비유</p>
-        <ul>
-            <li>학계,업계,기술전문가들에 의해 만들어진 Web n.0 개념</li>
-            <li>web 1.0(정적인 웹):프린트되어진 게시판 어떠한 상호작용 없이 정보전달 목적</li>
-            <li>Web 2.0(동적인 소셜 웹):개인이 데이터를 생성,공유하거나 여러 상호작용이 가능해졌다</li>
-            <li>Web 3.0:AI와 블록체인 기술이 추가 적용</li>
-            <li>Web3:3.0에서 블록체인 기술만 세부적으로 적용</li>
-        </ul>
-        <h4>웹의 구성</h4>
-        <p>
-            HTML(Hyper text Markup language):웹의 기본 근간이되는 웹의 뼈대
-            문서 안에 텍스트,이미지,문서,표 등을 태그를 통해 추가할수 있다.
-            등장 당시 기존문서에는 없었던 hypertext라는 기능을 통해 해당 링크로 이동이 가능하였다
-        </p>
-        <h4>HTTP</h4>
-        <p>
-            클라이언트와 서버간의 통신 규칙을 지정하는 프로토콜 <br>
-            특징:요청(request)과 응답(respond)의 구조<br>
-            요청메서드:get,post,pull,delete<br>
-            (상태코드)응답: 200번대 성공응답/ 400번대 클라이언트 오류/ 500번대 서버 오류
-        </p>
-        <h4>URL</h4>
-        <p>
-            (Uniform Resource locater):서버와 리소스를 직접 지정하여 사용자가 원하는 지점으로 이동<br>
-            구성: [https://도메인/경로?쿼리문자열#프래그먼트]
-            쿼리문자열:추가적인 요청정보, 프래그먼트:문서내 특정 위치<br>
-            예시-[https://www.example.com/page?id=123#section]
-        </p>
-        <h4>클라이언트와 서버</h4>
-        <p>
-            클라이언트:사용자가 서버와 상호작용을 위한 장치나 소프트웨어 ui,요청생성,응답처리,캐시기능,동적동작지원
-            주요 클라이언트 소프트웨어:웹브라우저 chrome, firefox, safari, edge
-            모바일 애플리케이션:iOS 및 Android 용 앱
-            서버:클라이언트로 부터 받은 요청을 식별, 적절한 응답하는 역할
-            -특징:항시 대기상태,데이터 저장 및 관리
-            -다양한 처리능력:정적콘텐츠(html,css)와동적콘텐츠(api 호출,데이터베이스 처리) 지원
-        </p>
-        <h5>웹을 동물에 비유하면</h5>
-        <ul>
-            <li>뼈,골격의 역할을 하는 html</li>
-            <li>동물의 피부색,질감 털의 색상,길이를 조절하는 css</li>
-            <li>동물이 움직이고 사냥할 수 있는 능력을 부여하는 javascript</li>
-        </ul>
-    </dd>
-    </dl>
-     
-
-        <dl class="dayWrap">
-        <dt class="daybutton">25.2.11 day 7</dt>
-        <dd class="daycontent">
-        <h4>git 프로젝트 버전관리 도구, 분산형 버전관리 시스탬</h4>
-        <dl>
-            <dt>필요한 이유</dt>
-            <dd>파일이 변경되면 변경이력과 변경사항 확인 가능</dd>
-            <dd>이전버전으로 돌아갈 수 있다</dd>
-            <dd>협업을 할 때 유용하다</dd>
-            <dd>데이터 손실시 저장소에서 백업 가능</dd>
+            <dt class="daybutton">25.2.10 day 6</dt>
+            <dd class="daycontent">
+                <h4>Internet 과 웹의 차이</h4>
+                <p>:인터넷은 물리적인 네트워크 인프라 이며, 웹은 인터넷상에서 정보를 표시한 서로 주고받거나 상호작용이 가능한 문서
+                    인터넷은 도로, 자동차는 웹으로 비유</p>
+                <ul>
+                    <li>학계,업계,기술전문가들에 의해 만들어진 Web n.0 개념</li>
+                    <li>web 1.0(정적인 웹):프린트되어진 게시판 어떠한 상호작용 없이 정보전달 목적</li>
+                    <li>Web 2.0(동적인 소셜 웹):개인이 데이터를 생성,공유하거나 여러 상호작용이 가능해졌다</li>
+                    <li>Web 3.0:AI와 블록체인 기술이 추가 적용</li>
+                    <li>Web3:3.0에서 블록체인 기술만 세부적으로 적용</li>
+                </ul>
+                <h4>웹의 구성</h4>
+                <p>
+                    HTML(Hyper text Markup language):웹의 기본 근간이되는 웹의 뼈대
+                    문서 안에 텍스트,이미지,문서,표 등을 태그를 통해 추가할수 있다.
+                    등장 당시 기존문서에는 없었던 hypertext라는 기능을 통해 해당 링크로 이동이 가능하였다
+                </p>
+                <h4>HTTP</h4>
+                <p>
+                    클라이언트와 서버간의 통신 규칙을 지정하는 프로토콜 <br>
+                    특징:요청(request)과 응답(respond)의 구조<br>
+                    요청메서드:get,post,pull,delete<br>
+                    (상태코드)응답: 200번대 성공응답/ 400번대 클라이언트 오류/ 500번대 서버 오류
+                </p>
+                <h4>URL</h4>
+                <p>
+                    (Uniform Resource locater):서버와 리소스를 직접 지정하여 사용자가 원하는 지점으로 이동<br>
+                    구성: [https://도메인/경로?쿼리문자열#프래그먼트]
+                    쿼리문자열:추가적인 요청정보, 프래그먼트:문서내 특정 위치<br>
+                    예시-[https://www.example.com/page?id=123#section]
+                </p>
+                <h4>클라이언트와 서버</h4>
+                <p>
+                    클라이언트:사용자가 서버와 상호작용을 위한 장치나 소프트웨어 ui,요청생성,응답처리,캐시기능,동적동작지원
+                    주요 클라이언트 소프트웨어:웹브라우저 chrome, firefox, safari, edge
+                    모바일 애플리케이션:iOS 및 Android 용 앱
+                    서버:클라이언트로 부터 받은 요청을 식별, 적절한 응답하는 역할
+                    -특징:항시 대기상태,데이터 저장 및 관리
+                    -다양한 처리능력:정적콘텐츠(html,css)와동적콘텐츠(api 호출,데이터베이스 처리) 지원
+                </p>
+                <h5>웹을 동물에 비유하면</h5>
+                <ul>
+                    <li>뼈,골격의 역할을 하는 html</li>
+                    <li>동물의 피부색,질감 털의 색상,길이를 조절하는 css</li>
+                    <li>동물이 움직이고 사냥할 수 있는 능력을 부여하는 javascript</li>
+                </ul>
+            </dd>
         </dl>
-        <p>
-            git의 파일관리를 위한 사용되는 공간들 [working dir -> staging -> repository] <br>
-            -working directory(modified):로컬상의 실제 위치, git은 파일을 추적하고는 있지만 저장소 반영은 안되는 상태<br>
-            -staging area: commit 준비된 파일들 임시 저장공간 git add로 이곳에 온다<br>
-            -repository:git이 관리하는 데이터베이스, git commit으로 저장되며 기록된다<br>
-            코드 작성 후 저장소 올라가는 공식 명령어 add commit push
-        </p>
-        <p>
-            git branch<br>
-            같은 분기점에서 시작하여 서로다른 코드를 작성해야 되는 협업에서 사용된다. 분기된 코드에서 또 분기가 가능하며 이때는 분기 기준이 되는 브랜치에서 시작하도록 주의<br>
-            git checkout -b branchname: 현재코드에서 브랜치생성후 바로 이동<br>
-            git checkout branchname: branchname의 브랜치로 이동<br>
-            git branch: branch들 이름보기
-        </p>
-        <p>
-            git merge <br>
-            branch된 코드를 하나의 코드로 병합할 때 사용<br>
-            merge 시도할 때 실패하는 이유는 branch협업시 같은곳에 수정사항이 발생,일치하지 않아서 발생한다.<br>
-            해결방안:git fetch --all :모든 원격저장소 내용을 로컬에 최신화<br>
-            git pull origin main(branch):원격저장소(origin)의 내용을 브랜치코드로 가져오기
-        </p>
-    </dd>
-    </dl>
 
-  
-        <dl class="dayWrap">
-        <dt class="daybutton">25.2.12 day 8</dt>
-        <dd class="daycontent">
-        <h4>HTML5는 웹의 최신 표준이여</h4>
 
-        <h4>SEO(Search Engine Optimize):검색엔진 최적화</h4>
-        <p>
-            관연 키워드로 웹사이트에서 검색이 되었을때 검색된 페이지 최상단에 노출시켜 사용자 유입 증가 목적으로 최적화하는 작업
-            검색엔진(google,bing)은 검색 키워드와 연관된 내용을 사용자에게 재공하기 위해 색인(index),분석을 하는데 seo는 이 과정을 위해 이해한다
-            SEO에 중요한 태그들
-            header:title,meta
-            body/특징은 의미가 부여된(sementic Tag)태그를 사용하여 검색엔진이 사이트를 쉽게 분석할 수 있도록 의도한다:h(n),nav,main,article,section,footer
-        </p>
-    </dd>
-    </dl>
-   
         <dl class="dayWrap">
-        <dt class="daybutton">25.2.13 day 9</dt>
-        <dd class="daycontent">
-        <h4>CSS(castading style sheet)</h4>
-        <p>html만 작성된 웹페이지에 스타일과 레이아웃 정의하는 언어</p>
-        <dl>
-            <dt>css주요 특징</dt>
-            <dd>스타일링 분리</dd>
-            <dd>반응형 디자인</dd>
-            <dd>계층적 구조</dd>
+            <dt class="daybutton">25.2.11 day 7</dt>
+            <dd class="daycontent">
+                <h4>git 프로젝트 버전관리 도구, 분산형 버전관리 시스탬</h4>
+                <dl>
+                    <dt>필요한 이유</dt>
+                    <dd>파일이 변경되면 변경이력과 변경사항 확인 가능</dd>
+                    <dd>이전버전으로 돌아갈 수 있다</dd>
+                    <dd>협업을 할 때 유용하다</dd>
+                    <dd>데이터 손실시 저장소에서 백업 가능</dd>
+                </dl>
+                <p>
+                    git의 파일관리를 위한 사용되는 공간들 [working dir -> staging -> repository] <br>
+                    -working directory(modified):로컬상의 실제 위치, git은 파일을 추적하고는 있지만 저장소 반영은 안되는 상태<br>
+                    -staging area: commit 준비된 파일들 임시 저장공간 git add로 이곳에 온다<br>
+                    -repository:git이 관리하는 데이터베이스, git commit으로 저장되며 기록된다<br>
+                    코드 작성 후 저장소 올라가는 공식 명령어 add commit push
+                </p>
+                <p>
+                    git branch<br>
+                    같은 분기점에서 시작하여 서로다른 코드를 작성해야 되는 협업에서 사용된다. 분기된 코드에서 또 분기가 가능하며 이때는 분기 기준이 되는 브랜치에서 시작하도록 주의<br>
+                    git checkout -b branchname: 현재코드에서 브랜치생성후 바로 이동<br>
+                    git checkout branchname: branchname의 브랜치로 이동<br>
+                    git branch: branch들 이름보기
+                </p>
+                <p>
+                    git merge <br>
+                    branch된 코드를 하나의 코드로 병합할 때 사용<br>
+                    merge 시도할 때 실패하는 이유는 branch협업시 같은곳에 수정사항이 발생,일치하지 않아서 발생한다.<br>
+                    해결방안:git fetch --all :모든 원격저장소 내용을 로컬에 최신화<br>
+                    git pull origin main(branch):원격저장소(origin)의 내용을 브랜치코드로 가져오기
+                </p>
+            </dd>
         </dl>
-        <h4>id와 class의 차이점</h4>
-        <p>
-            id:문서 내에서 고유한 선택자 이름 <br>
-            class: 문서내에서 여러 이름을 선택할 수 있고, 동일한 속성 값을 적용한다
-        </p>
-        <h3>css색상지정</h3>
-        <p>
-            16진수 #red/green/blue / rgb(,,)255가 100%, 마지막에 .n 은 투명도 1이 100% <br>
-            hsl(hue,saturation,lightness/색상,채도,명도) color:hsl(120,100%,50%) <br>
-            그라데이션 background: linear-gradient(to bottom, #000, #999)
-        </p>
-        <h3>css 폰트와 텍스트</h3>
-        <h4>font</h4>
-        <p>
-            글꼴 설정 font-family:'Arial','Helvetica', sans-sefif <br>
-            (단축속성)font: font-style,font-variant,font-weight,font-size/lh,font-family <br>
-            ex] font: italic small-caps bold 16px/1.5 'Georgia', serif;
-        </p>
-        <h4>text</h4>
-        <p>
-            font-size 단위 : px em % rem <br>
-            text-align:left,right,center,justify <br>
-            letter-spacing:문자간격 양수는 간격 넓어지고, 음수는 좁아진다 <br>
-            text-transform:uppercase/lowercase/capitalize <br>
-            text-decoration: underline/line-through/none
-        </p>
-        <h4>버튼 스타일링</h4>
-            <ul>
-                <li>:hover 마우스 클릭직전상태</li>
-                <li>:active 클릭하는 동안</li>
-                <li>:visit 클릭한 후에</li>
-            </ul>
-            <p>transition:bgc, 0.3, ease  상태변환시 부드러운 애니메이션 효과</p>
-            <h4>flexbox 정렬</h4>
-            <p>
-                요소배치와 컨테이너 안의 아이템의 크기,간격 정렬방식을 제어
-                컨테이너와 아이템별로 적용을 해야 할 속성이 나눠진다.
-            </p>
-            <dl>
-                <dt>[컨테이너 속성]</dt>
-                <dd>display:flex flexbox레이아웃을 활성화</dd>
-                <dd>flex-direction 아이템 정렬 방향 row,rowreverse,column(아래에서 위),column-reverse</dd>
-                <dd>justify-content 주 축에서 정렬방식 flex-start,flex-end,space-between/around</dd>
-                <dd>align-items 교차축에서 정령방식 stretch,flex-start,flex-end,center,baseline</dd>
-                <dd>flex-wrap 아이템이 한 줄을 초과시 줄바꿈을 설정 nowrap,wrap,wrap-reverse</dd>
-            </dl>
-            <dl>
-                <dt>[flexbox>아이템 속성]</dt>
-                <dd>flex-grow:아이템이 남은 공간을 차지하는 비율 </dd>
-                <dd>flex-shirnk:아이템이 줄어드는 비율</dd>
-                <dd>flex-basis: 아이템의 기본크기</dd>
-                <dd>align-self:특정 아이템의 교차축 정렬</dd>
-            </dl>
-            <h4>grid 정렬</h4>
-            <p>
-                flex와 달리 행과 열을 동시에 제어할 수 있어,복잡한 레이아웃에도 적합하다 <br>
-                grid컨테이너:grid 레이아웃 적용된 부모요소 (관련속성은 부모요소에 설정) <br>
-                grid아이템:컨테이너 안 포함된 자식요소 행과 열에 배치되어, 위치와 크기를 설정
-            </p>
-            <dl>
-                <dt>grid 컨테이너 속성</dt>
-                <dd>display:grid</dd>
-                <dd>grid-template-rows:행 크기 설정</dd>
-                <dd>grid-template-column:열 크기 설정</dd>
-                <dd>gap:행과 열 사이 간격설정</dd>
-            </dl>
-            <dl>
-                <dt>grid아이템 속성</dt>
-                <dd>grid-column:아이템이 차지할 열 범위</dd>
-                <dd>grid-row:아이템이 차지할 행 범위</dd>
-                <dd>justify-self:특정 아이템 수평정렬</dd>
-                <dd>align-self:특정 아이템의 수직 정렬</dd>
-            </dl>
-            <h4>media querries</h4>
-            <p>화면의 크기,해상도 방향에따는 스타일 적용, 반응형웹디자인에 사용된다</p>
-            <ul>
-                <li>@media (max-width:770px) 화면너비 770px이하일때 적용될 스타일</li>
-                <li>@media (min-width:1200px) 화면너비 1200px이상일때 적용될 스타일</li>
-                <li>orientation:디바이스방향을 기준 landscape,portrait @media (orientation:landscape)</li>
-                <li>resolution:해상도(dpi) 기준 스타일적용 @media (min-resolution:300dpi)</li>
-                
-            </ul>
-        </dd>
+
+
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.12 day 8</dt>
+            <dd class="daycontent">
+                <h4>HTML5는 웹의 최신 표준이여</h4>
+
+                <h4>SEO(Search Engine Optimize):검색엔진 최적화</h4>
+                <p>
+                    관연 키워드로 웹사이트에서 검색이 되었을때 검색된 페이지 최상단에 노출시켜 사용자 유입 증가 목적으로 최적화하는 작업
+                    검색엔진(google,bing)은 검색 키워드와 연관된 내용을 사용자에게 재공하기 위해 색인(index),분석을 하는데 seo는 이 과정을 위해 이해한다
+                    SEO에 중요한 태그들
+                    header:title,meta
+                    body/특징은 의미가 부여된(sementic Tag)태그를 사용하여 검색엔진이 사이트를 쉽게 분석할 수 있도록
+                    의도한다:h(n),nav,main,article,section,footer
+                </p>
+            </dd>
+        </dl>
+
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.13 day 9</dt>
+            <dd class="daycontent">
+                <h4>CSS(castading style sheet)</h4>
+                <p>html만 작성된 웹페이지에 스타일과 레이아웃 정의하는 언어</p>
+                <dl>
+                    <dt>css주요 특징</dt>
+                    <dd>스타일링 분리</dd>
+                    <dd>반응형 디자인</dd>
+                    <dd>계층적 구조</dd>
+                </dl>
+                <h4>id와 class의 차이점</h4>
+                <p>
+                    id:문서 내에서 고유한 선택자 이름 <br>
+                    class: 문서내에서 여러 이름을 선택할 수 있고, 동일한 속성 값을 적용한다
+                </p>
+                <h3>css색상지정</h3>
+                <p>
+                    16진수 #red/green/blue / rgb(,,)255가 100%, 마지막에 .n 은 투명도 1이 100% <br>
+                    hsl(hue,saturation,lightness/색상,채도,명도) color:hsl(120,100%,50%) <br>
+                    그라데이션 background: linear-gradient(to bottom, #000, #999)
+                </p>
+                <h3>css 폰트와 텍스트</h3>
+                <h4>font</h4>
+                <p>
+                    글꼴 설정 font-family:'Arial','Helvetica', sans-sefif <br>
+                    (단축속성)font: font-style,font-variant,font-weight,font-size/lh,font-family <br>
+                    ex] font: italic small-caps bold 16px/1.5 'Georgia', serif;
+                </p>
+                <h4>text</h4>
+                <p>
+                    font-size 단위 : px em % rem <br>
+                    text-align:left,right,center,justify <br>
+                    letter-spacing:문자간격 양수는 간격 넓어지고, 음수는 좁아진다 <br>
+                    text-transform:uppercase/lowercase/capitalize <br>
+                    text-decoration: underline/line-through/none
+                </p>
+                <h4>버튼 스타일링</h4>
+                <ul>
+                    <li>:hover 마우스 클릭직전상태</li>
+                    <li>:active 클릭하는 동안</li>
+                    <li>:visit 클릭한 후에</li>
+                </ul>
+                <p>transition:bgc, 0.3, ease 상태변환시 부드러운 애니메이션 효과</p>
+                <h4>flexbox 정렬</h4>
+                <p>
+                    요소배치와 컨테이너 안의 아이템의 크기,간격 정렬방식을 제어
+                    컨테이너와 아이템별로 적용을 해야 할 속성이 나눠진다.
+                </p>
+                <dl>
+                    <dt>[컨테이너 속성]</dt>
+                    <dd>display:flex flexbox레이아웃을 활성화</dd>
+                    <dd>flex-direction 아이템 정렬 방향 row,rowreverse,column(아래에서 위),column-reverse</dd>
+                    <dd>justify-content 주 축에서 정렬방식 flex-start,flex-end,space-between/around</dd>
+                    <dd>align-items 교차축에서 정령방식 stretch,flex-start,flex-end,center,baseline</dd>
+                    <dd>flex-wrap 아이템이 한 줄을 초과시 줄바꿈을 설정 nowrap,wrap,wrap-reverse</dd>
+                </dl>
+                <dl>
+                    <dt>[flexbox>아이템 속성]</dt>
+                    <dd>flex-grow:아이템이 남은 공간을 차지하는 비율 </dd>
+                    <dd>flex-shirnk:아이템이 줄어드는 비율</dd>
+                    <dd>flex-basis: 아이템의 기본크기</dd>
+                    <dd>align-self:특정 아이템의 교차축 정렬</dd>
+                </dl>
+                <h4>grid 정렬</h4>
+                <p>
+                    flex와 달리 행과 열을 동시에 제어할 수 있어,복잡한 레이아웃에도 적합하다 <br>
+                    grid컨테이너:grid 레이아웃 적용된 부모요소 (관련속성은 부모요소에 설정) <br>
+                    grid아이템:컨테이너 안 포함된 자식요소 행과 열에 배치되어, 위치와 크기를 설정
+                </p>
+                <dl>
+                    <dt>grid 컨테이너 속성</dt>
+                    <dd>display:grid</dd>
+                    <dd>grid-template-rows:행 크기 설정</dd>
+                    <dd>grid-template-column:열 크기 설정</dd>
+                    <dd>gap:행과 열 사이 간격설정</dd>
+                </dl>
+                <dl>
+                    <dt>grid아이템 속성</dt>
+                    <dd>grid-column:아이템이 차지할 열 범위</dd>
+                    <dd>grid-row:아이템이 차지할 행 범위</dd>
+                    <dd>justify-self:특정 아이템 수평정렬</dd>
+                    <dd>align-self:특정 아이템의 수직 정렬</dd>
+                </dl>
+                <h4>media querries</h4>
+                <p>화면의 크기,해상도 방향에따는 스타일 적용, 반응형웹디자인에 사용된다</p>
+                <ul>
+                    <li>@media (max-width:770px) 화면너비 770px이하일때 적용될 스타일</li>
+                    <li>@media (min-width:1200px) 화면너비 1200px이상일때 적용될 스타일</li>
+                    <li>orientation:디바이스방향을 기준 landscape,portrait @media (orientation:landscape)</li>
+                    <li>resolution:해상도(dpi) 기준 스타일적용 @media (min-resolution:300dpi)</li>
+
+                </ul>
+            </dd>
         </dl>
         <dl class="dayWrap">
             <dt class="daybutton">25.2.14 day 10[js기초]</dt>
@@ -464,7 +467,7 @@
                     <li>null</li>
                     <li>symbol ex] const key=Symbol("key")</li>
                 </ul>
-                
+
                 <p>타입 확인하는 법 console.log(typeof data)</p>
                 <h4>number타입</h4>
                 <p>일반적인 사칙연산 가능, 복잡한 계산을 위해서는 Math 내장객체는 한다</p>
@@ -479,7 +482,7 @@
                 <h4>연산자(comparison operator)</h4>
                 <ul>
                     <li>동치연산 ===:같다면 true,!==:다르면 true</li>
-                    <li>비교연산 >,<,>=,<=</li>
+                    <li>비교연산 >,<,>=,<=< /li>
                     <li>논리합(OR) || :두 값 중 하나라도 true 이면 true</li>
                     <li>논리곱(AND) &&: 두 값 중 하나라도 false 이면 false</li>
                 </ul>
@@ -492,7 +495,7 @@
                 <p>
                     function greeting(메게변수){ <br>
                     console.log('hello'+ 매개변수)}<br>
-                    함수를 호출할 때 소괄호 안에 값을 넣음으로써 매개변수에 값을 할당할 수 있는것이 전달인자 
+                    함수를 호출할 때 소괄호 안에 값을 넣음으로써 매개변수에 값을 할당할 수 있는것이 전달인자
                 </p>
                 <h4>return</h4>
                 <p>
@@ -508,7 +511,7 @@
                 <h4>if</h4>
                 <p>
                     if(true|false){
-                        true일때 실행되는 코드
+                    true일때 실행되는 코드
                     }
                 </p>
                 <h4>&&, || 논리연산자</h4>
@@ -519,9 +522,9 @@
                 <h4>if 조건문</h4>
                 <p>
                     if(true실행){
-                        실행문
+                    실행문
                     }else if(두번째 조건){
-                        실행
+                    실행
                     }else if(세번째){
 
                     }else{마지막 나머지}
@@ -530,22 +533,19 @@
                 <p>for(시작true;종료false;실행시변화){실행문}</p>
                 <h4>중첩 반복문</h4>
                 <p>
-                    for (let i = 1; i <= 6; i++) {
-                    for (let j = 1; j <= 6; j++) {
-                        console.log(`첫번째 주사위는 ${i}, 두번째 주사위는 ${j}입니다.`);
-                    }
-                    } <br>
-                    주사위 두 개를 굴려 나오는 모든 경우의 수를 구하는 코드
-                    <hr>외부 반복문의 초기화와 조건식 평가후,내부반복문이 실행 내부 반복문도 초기화와 <br>
-                    조건식 평가후 내부 코드가 실행 내부 반복문의 조건식 평가가 false가 되면, 내부 반복문은 종료가 <br>
-                     되고 외부 반복문의 증감식과 조건식 평가가 이루어집니다. 이때 조건식 평가가 true면, 다시 내부 반복문을 순환하는 방식으로 진행됩니다. <br>
-                      외부 반복문의 조건식이 false가 되면 모든 반복문이 종료가 됩니다.
+                    for (let i = 1; i <= 6; i++) { for (let j=1; j <=6; j++) { console.log(`첫번째 주사위는 ${i}, 두번째 주사위는
+                        ${j}입니다.`); } } <br>
+                        주사위 두 개를 굴려 나오는 모든 경우의 수를 구하는 코드
+                        <hr>외부 반복문의 초기화와 조건식 평가후,내부반복문이 실행 내부 반복문도 초기화와 <br>
+                        조건식 평가후 내부 코드가 실행 내부 반복문의 조건식 평가가 false가 되면, 내부 반복문은 종료가 <br>
+                        되고 외부 반복문의 증감식과 조건식 평가가 이루어집니다. 이때 조건식 평가가 true면, 다시 내부 반복문을 순환하는 방식으로 진행됩니다. <br>
+                        외부 반복문의 조건식이 false가 되면 모든 반복문이 종료가 됩니다.
 
-            </p>
+                </p>
                 <h4>while반복문</h4>
                 <p>
                     while(true일때 실행){
-                        실행문
+                    실행문
                     } while문을 사용할떄는 종료지점(false)을 정확하게 파악하지 않으면 무한실행이 되버려 연산자원을 <br>
                     낭비하게 된다
                 </p>
@@ -557,6 +557,7 @@
             </dd>
         </dl>
         <dl class="dayWrap">
+<<<<<<< HEAD
             <dt class="daybutton">25.2.17 day12계산기앱 구현간 js,html연결문법(DOM)</dt>
             <dd class="daycontent">
                 <h4>html요소 JS에서 이용</h4>
@@ -580,7 +581,370 @@
                 </p>
             </dd>
         </dl>
+=======
+            <dt class="daybutton">25.2.19 day13 참조타입 Array,Oject</dt>
+            <dd class="daycontent">
+                <p>
+                    데이터 타입은 원시타입과 참조형 타입으로 나뉜다. 참조타입은 복잡한 데이터를 나타내며,
+                    원시타입처럼 값 자체가 아닌 메모리 주소를 참조(가리키는)형태로 저장한다 [값을 저장하지 않는다]
+>>>>>>> 70d123c5aad8e4aabd42e5a3053cf980009422be
 
+                </p>
+                <p>
+                <h3>Reference type(참조타입 종류)</h3>
+                Object {}: {key:value, key:value}형태로 여러개 저장 가능
+                Array []: [i,1,'2',3] 형태로 여러개 저장
+                function(){}: 특정 작업을 수행하는 코드블록, 변수에 저장하거나 다른함수에 결과물을 전달가능
+                </p>
+                <h3>참조타입 특징</h3>
+                <p>
+                    값을 직접 저장이 아닌, 값의 메모리 주소를 저장하는 형태로 여러 변수들이 하나의 메모리를 공유하게 된다
+                    2개의 다른변수의 같은 값의 참조데이터 라면 메모리를 공유하게 되고, 메모리 공유변수 중 하나의 값을 재할당하면
+                    다른변수의 값도 의도치 않게 바뀔수 있다. const 참조데이터1=참조데이터2
+                    배열:순서대로 나열하고 싶을때 배열 사용 순서를 보증
+                    index를 사용하는 que형태 베이스
+                </p>
+                <h3>얕은 복사와 깊은복사</h3>
+                <p>
+                    const user1={name:'alice',age:99,id:1},
+                    user2={...user1} 얕은복사 상태: user1의 객체를 재할당하거나,
+                    추가,삭제를 하면 user2에도 영향을 준다
+                </p>
+                <p>
+                    const user1={name:'alice',age:99,id:1},
+                    user2Deep=JSON.parse(JSON.stringify(user1))
+                    깊은복사 상태: 복사원본과 독립적인 메모리를 새로 만들어 다른 쪽에 영햫을
+                    안준다
+                </p>
+                <h3>배열데이터 자주사용되는 내장함수</h3>
+                <ul>
+                    <li>push():배열마지막에 요소추가</li>
+                    <li>pop():마지막 요소 제거</li>
+                    <li>unshift():배열 첫째 요소 추가</li>
+                    <li>shift():첫째 요소 제거</li>
+                    <li>
+                        <h3>배열 순회</h3>
+                    </li>
+                    <li>for (const item of arr){ item이 각각의 요소}</li>
+                    <li>arr.forEach((item,index){})</li>
+                    <li>arr.map(a,b,c) 현재 순회중인 요소,현재 인덱스, 호출한 배열 원복</li>
+                    <li>arr.reduce((acc,num)=> acc+num, 0): acc는 누적값, num은 현재요소</li>
+                    <li>arr.filter(function(boolean이나 함수추가 가능)):원하는 요소만 선택하여 새로운 배열을 반환</li>
+                </ul>
+                <h3>객체데이터</h3>
+                <ul>
+                    <li>객체데이터 내부의 값에 접근하려면 .표기법을 사용한다 obj.key value <br>
+                        or 대괄호 표기법 obj[key] ''사용하면 객체 자체로 들어가고, 사용않하면 변수에 저장된 키값
+                    </li>
+                    <li>Object.key(obj): 객체의 모든 키 들만 배열반환</li>
+                </ul>
+                for(const key in user){(객체 내부를 순회하는 코드)
+                console.log('key:${key}',`value:${user[key]}`)
+                }
+
+
+                결과
+                user.email='gerd@gmail.com' 객채 추가
+                delete user.email;
+
+                객체데이터 깊은복사 obj2 = Json.parse(Json.stringify(obj))
+                ----------------------
+                순서대로 나열하고 싶을때 배열 사용 순서를 보증
+                index를 사용하는 que형태 베이스
+                자바스크립트는 데이터들마다 내장함수를 지원한다
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.20 day 14</dt>
+            <dd class="daycontent">
+                <h4>원시자료형과 참조자료형</h4>
+                <p>
+                    값이 단순해보이는 특징을 가지는 것이 원시데이터(primitive type)
+                    값을 저장할 때 메모리에 직접 저장이 되며, 복사된 값은 다른 메모리에 저장이 된다
+                    복사된 값을 변경해도 원본에는 영향을 안준다,원시데이터중 문자열은 [n]인덱스를 붙여 n번째 글씨를 찾을수는
+                    있지만 변경이 불가하다 (변경이 불가한값)
+                    복잡해 보이는 값을 가지는 것이 참조데이터(reference type)
+                    값을 저장할때 원시데이터와 같은공간에 저장이 아닌 참조전용 저장공간 heap이라는 곳에 저장
+                    이 되며, 원시데이터와 같은공간에는 heap이라는 메모리의 주소가 저장된다 (변경이 가능한 값)
+                </p>
+                <h4>스코프</h4>
+                <p>
+                    변수에 접근할수있는 범위, 변수의 유효범위 코드블록(함수의 중괄호 내부)에서 작성된 변수는 바깥 범위에서
+                    사용이 불가능하지만 바깥쪽 스코프의 변수는 내부에서 사용이 가능하다. 가장 바깥에 있는 스코프는 global scope,
+                    그외 안쪽에 있는 스코프는 local scope라 한다
+                    변수 var사용을 지향한다 변수 var은 함수의 스코프를 무시한다
+                </p>
+                <h4>window 객체</h4>
+                <p>
+                    브라우저,클라이언트에서 전역객체
+                    전역변수는 많이 사용하면 의도치 않게 로컬스코프에서 적용되어 에러를 일으킨다
+                </p>
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.21 day15</dt>
+            <dd class="daycontent">
+                <h4>dom</h4>
+                <p>
+                    html 에서 dom을 사용하기 위해서는 head태그에 script태그를 사용하는데
+                    브라우저가 html을 읽을때 script태그를 보면 읽다 말고 script로 넘어가는데 js파일에서 html요소을
+                    가져와 사용하고 있으면 브라우저는 읽다만 html에서 해당요소를 찾지 못한다
+                    script태그에 defer속성을 추가하거나 body하단으로 script를 옮겨야 된다
+                </p>
+                <h4>CRUD(Create,Read,Update,Delete)</h4>
+                <p>
+                    DOM이 아니도라도 컴퓨터언어를 배울때 알아야될 내용
+                    Create:document.createElement(요소) 만들어졌지만 어디에 정착은 못하는상태
+                    document.body.append(요소)
+                    document.querySelector(.cn | #in)
+                    Delete:document.querySelector(선택자요소).innerHTML=''/
+                    변수지정요소.removeChild(변수지정요소.firstchild) :for을 사용하여 전체 삭제 가능
+                    요소.remove():직접 삭제 가능
+                </p>
+                <p>
+                <h5>이벤트 객체</h5>
+                객체에서 특정 이벤트가 발생했을때 함수를 지정하게 할 수 있다
+                onclick 클릭시에 작동,검색 메트릭스함수
+                onkeyup 키가 떼졌을때 함수실행,
+                onscroll 스크롤 작동시에 함수실행,
+                </p>
+                <p>
+                    특정상황에서 회원가입 상황에서 1번 비밀번호를 입력하고
+                </p>
+
+                onkeyup 내부 이전pwvalue작성
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.24 day16</dt>
+            <dd class="daycontent">
+                <h4>고차함수</h4>
+                <p>
+                    고차함수(higher order function)는 함수를 전달인자(argument)로 받으면서,함수를 리턴할수있는 함수
+                    함수를 변수에 저장하면 변수를 전달인자로 받을 수 있다, 함수에 인자로 들어오는 함수를 콜백함수라고 한다
+                    콜백함수>고차함수
+                </p>
+                <p>
+                    고차함수는 for문보다 성능이 뛰어나고,간결하고, 재사용이 가능
+
+                    array 에서 자주 사용되는 (고차함수사용)메서드 .filter(), .map(), .reduce()
+
+                    filter : 각 배열의 요소들이 비교연산자를 통한 true에서 따로 분류한 새 배열 완성
+                    filter(callbackfn, argmt)
+                    callbackfn: 함수를 한번씩 호출하고, callbackfn이 참일때 반환하는 모든값을 새 배열로
+
+                    map:각각의 배열요소를 맵핑하여 동일한 적용을 할당하여 새 배열 완성
+                    map(callbackfn(arg){})
+                    arg:배열각각의 요소
+
+                    reduce
+                    - 배열의 값들을 하나로 합치고 싶을 때 -> 숫자 합계, 문자열 연결(concatnation)
+                    - 배열의 요소를 기준으로 무엇인가를 계산하고 싶을 때 -> 최대 값, 최소 값, 평균
+                    reduce에는 인자가 여러개가 있습니다
+                    - callback 함수
+                    - accumulator: 누산기(계산이 누적된 값)
+                    - currentValue: 현재 처리중인 요소의 값
+                    - currentIndex: 현재 처리중인 인텍스의 값
+                    - array: reduce를 호출한 배열
+                    - 초기값
+                </p>
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.25 day17</dt>
+            <dd class="daycontent">
+                <h3>객체지향 ObjectOrientedProgramming</h3>
+                <p>
+                    사람이 세계를 보고 이해하는 방법을 흉내낸 방법론
+                    하나의 모델이 되는 청사진(Class), 청사진을 기반으로 한 객체(object) instance
+                <h4>Class 사용시 전체적인 모양</h4>
+                class Car = {
+                constructor(brand, name, color){}
+                }
+                const avante = new Car('hyundai','avante',black) (<=생성된 인스턴스) </p>
+                    <h4>this</h4>
+                    class 에서 사용되어 인스턴스로 넘어와서 인스턴스 자체를 지칭 class 내부에서는 화살표함수 사용 불가
+                    <h4>Method</h4>
+                    클래스에서 정의되는 함수, 인스턴스에서 사용
+                    구현방법
+                    es5: class Car(){} 외부에서 Car.prototype.refuel=()=>{...}
+                    es6: class Car(){
+                    constructor(){class가 객체이기 때문에 let,const가 필요하지 않다,constructor는 한번만 시행한다}
+                    refuel(){ ...}
+                    }
+                    </p>
+                    <p>
+                        애플리케이션을 설계할때는 객체지향을 이해하고 응용해야 좋은결과가 나온다
+                        객체지향의 주요 개념 4개
+                        캡슐화(Encapsulation)/상속(Inheritance)/추상화(Abstraction)/다양성(Polimorphism)
+                        캡슐화:필요한 정보만 보여주는 것(스마트폰의 uiㅇ, 내부회로 x), 은닉화는 내부 데이터나 구현이 외부로
+                        노출되지 않는의미도 포함/객체 외부에서는 필요한 동작(메서드)만 노출시켜야된다/엄격한 클래스는 속성의 직접접근을 막고
+                        설정하는 함수(setter),불러오는 함수(getter)를 철저하게 나눈다/ 데이터(속성)와 기능(메서드)를 따로 정의하는것이아닌 객체안에 묶어논것
+                        느슨하게 결합되있는 상태이며 이는 코드 작성순서대로 실행이 아닌,코드가 상징하는 실제 모습과 닮게 코드를 모아 결합하는것을 의미
+
+                        추상화:복잡한것을 감추고, 실제보여지는 부분(인터페이스)만 단순하게 만드는 개념
+                        상속:재사용, 물려주는 속성이나 메서드
+                        다형성:같은input 다른 output들/
+                    </p>
+                    <p>
+                        객체지향의 추상화는, 속성과 메서드의 이름만 노출시켜 사용을 단순화한다는 의미
+                        ts에서 인터페이스는 '이 클래스는 메서드 이름이 의도한대로 작동'
+                    </p>
+                    <p>
+                    <h4>prototype</h4>
+                    프로토타입은 원형객체
+                    </p>
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.26 day 18</dt>
+            <dd class="daycontent">
+                <h3>비동기</h3>
+                <p>
+                    앞선 처리가 오래걸릴때 뒤에 작업들을 처리못하는 현상을 블로킹.
+                    앞선 처리가 끝남과 뒤에 작업이 시작되는 시점이 같은상황을 동기적이다 표현.
+                    효율적인 작업을 위해서는 비동기적 작업이 필요하고 node.js개발자도 이와 같은 방법을 채택
+                    비동기적 실행은 웹개발에서 유용하다 예시:백그라운드 실행, 로딩창등의 작업, 인터넷에서 서버로 요청보내고,응답 기다리기
+                    큰 용량의 파일을 로딩하는 작업
+                </p>
+                <p>
+                <h3>javascript동</h3>
+                js는 싱글스레드 기반 동작언어이며 한 번에 하나의 작업만 처리한다.기본적으로는 동기적으로 코드가 실행되지만,
+                node.js와 같은 런타임환경이 함께협력하여 비동기 작업을 처리할수있다.
+                </p>
+                <h3>비동기 제어</h3>
+                <p>
+                    특정 상황에서 원치않는 비동기방식을 동기적인 처리가 필요할때 사용할수 있는 방법중
+                    콜백함수를 사용할수있다 123순서로 처리를 원할떼 wrap{1(){2(){3()}}}모양으로 작성
+                    하지만 동기적인 처리가 필요한 함수가 많을때는 가독성이 떨어지므로 class Promise를 사용
+                </p>
+                <p>
+                    promise는 클래스 객체이므로 new키워드와 함께 객체생성이 필요
+                    new Promise(resolve,reject)
+                    - then: 성공적으로 응답을 받거나, 값을 받아오면 실행
+                    - catch: 만약, 값을 받지 못할 때
+                    - finally: 성공이든 실패든 상관없이 실행
+                    new Promise가 state,result 내부프로퍼티를 가지며 .then,.catch,.fianlly
+                    메서드를 사용해야 접근 가능
+
+                </p>
+                <p>
+                <h3>State</h3>
+                기본상태는 pending대기상태이며, 비동기처리를 수행할 콜백(excuter)가 성공하면 fulfilled로 변경이 된다
+                에러가 발생하면 rejected거부 상태
+                </p>
+                <p>
+                <h3>Result</h3>
+                undefined상태에서 비동기처리를 수행할 콜백이 성공적으로 작동하여 resolve(value)가
+                호출되면 value로,에러가 발생하여 reject가 호출되면 error
+                </p>
+                <p>
+                <h3>Promise chaining</h3>
+                비동기 작업이 순차적으로 진행되야 될때 체이닝 사용 then,catch,finally메서드들은
+                promise를 리턴하기 때문에 가능
+                </p>
+
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">25.2.27 day 19</dt>
+            <dd class="daycontent">
+                <h3>React</h3>
+                <p>
+                    react.js는 컴포넌트 기반 아키텍쳐를 채택하여 ui를 작은 단위로 나눠 관리
+                <h4>장점</h4>
+                <ul>
+                    <li>컴포넌트 기반:높은 재사용성</li>
+                    <li>가상DOM:실제dom이 아니라 최적화된 성능</li>
+                    <li>풍부한 생태계:다양한 라이브러리 도구지원과 활성화된 커뮤니티</li>
+                </ul>
+                <h4>사용이유</h4>
+                <ul>
+                    <li>single page application지원:페이지 전환없이 동적인 콘텐츠 업데이트</li>
+                    <li>유연성:다른 라이브러리나 프레임워크와 쉽게 통합가능</li>
+                </ul>
+                </p>
+                <p>
+                    JSX(javascript xml):js의 확장문법,html과 유사구문 사용해 ui정의,html로 보이지만 js로 변환된다
+                </p>
+                <h4>component</h4>
+                <p>
+                    함수형과 클래스형으로 나뉜다. 함수형은 간단한 함수로 정의되며,Hook을 사용해 상태관리/
+                    클래스형은 클래스로 정의되며 생명주기 메서드로 사용된다
+                    컴포넌트는 독립적특성으로 조합하여 복잡한 ui를 구현한다
+                </p>
+                <h4>props와 state</h4>
+                <p>
+                    props는 부모컴포넌트가 자식으로 데이터를 전달하는 역할, 외부에서 전달되며 읽기전용
+                    state는 각 컴포넌트 내부에서 관리되는 상태,상태변경 감지시 재렌더링, 내부에서 관리되며 변경가능
+                </p>
+                <p>
+                <h4>이벤트처리</h4>
+                이벤트 핸들러는 camelCase로 작성,state 업데이트를 할수있다
+                </p>
+                <h4>map()메서드</h4>
+                <p>
+                    사용목적은 동적으로 추가되거나 삭제되는 데이터를 효율적으로 관리하게 한다
+
+                    const Component()=>{return(<반복el> 배열.map(배열요소(){return(key={필수입력})}</>)}
+                        map()이 js에서와의 차이점은 key={}를 반드시 입력해야된다. 주로 index형태의 id를 입력한다
+                </p>
+
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">day20</dt>
+            <dd class="daycontent">
+                <h3>react router dom</h3>
+                <p>
+                    SPA single page application 완전히 새로운 페이지를 불러오는 것이 아닌,
+                    부분적으로만 갱신하여 빠른 사용자경험을 제공한다.
+                    단점은 최초 로딩시간이 긴 편이며, html시멘틱 요소사용이 없어 검색됬을때 상단노출이 어렵다
+                    <hr>
+                    react router: 리엑트와는 별개로 설치를 해야된다, 설치를 하면 url변화에따른 페이지 전환없이
+                    컴포넌트 재렌더링을 돕는다
+                    설치후 routerdom에서 불러올것 {BrowserRoute, Routes, Route, Link } from 'react-router-dom'
+                    라우팅 설정은 BrowserRoute가 모든것을 감싼 상태여야 된다.
+                    하단에 Routes 안에 Route들을 모아두며 세팅하고, Link는 눌렀을때 url을 바꾸며 이동하는 역할을 한다
+                </p>
+                <p>
+                    Link to, Route path의 차이점
+                    공통을로 상대경로가 아닌 절대경로를 입력해야 된다
+                    route의 /는 루트를 의미 page의 최초(index)
+                </p>
+
+            </dd>
+        </dl>
+        <dl class="dayWrap">
+            <dt class="daybutton">day 21</dt>
+            <dd class="daycontent">
+                <h3>상태(react State)</h3>
+                <p>
+                    state는 toggle switch나 counter처럼 컴포넌트 내부에서 변할 수 있는 값, react state로 다뤄야 한다
+                    특징: 컴포넌트 내부에서 관리, 변경되는 동적인 데이터, useState를 통한 관리, 값이 변경될때 하위 컴포넌트도 재렌더링
+                    useState함수: state를 관리하기 위한 훅, 컴포넌트 내에서 호출하여 (state라는 변수를 선언)
+                    변수는 직관적인 이름 임의로 작명한다
+                    const[count,setCount]=useState(0) 배열구조분해 할당을 사용하여 반드시 2개 요소가 필요
+                    useState는 배열을 반환하며 배열 1번째는 상태, 2번째는 상태변경(갱신) 함수를 작성한다.
+                </p>
+                <h3>props</h3>
+                <p>
+                    부모 컴포넌트에서 자식컴포넌트로 전달하는 값으로 props는 변경불가, 부모에서 변경해야 한다
+                    특징: 객체 형태를 가진다, 변경할 수 없는 읽기전용 객체
+                    사용: 1.전달할 값을 하위컴포넌트에 속성,값을 정의 2.props를 이용하여 정의된
+                    값과 속성을 전달 3. 전달받은 props를 렌더링
+                </p>
+                <h3>이벤트 처리</h3>
+                <p>
+                    camelCase로 이벤트를 작성한다. 값은 표현된 함수로만 받는다.
+                    onChange: input,textarea,select와 같은 폼 엘리먼트의 입력값을 주로 제어한다.
+                    input엘리먼트 태그에 onChange={handler} 를 적용하면 미리 작성된 handler에 
+                    e.target.value로 이벤트 객체에 담긴 input값을 읽어올 수 있다.
+                    onClick: button,a 태그처럼 누를수 있는 요소에 적용된다
+                </p>
+            </dd>
+        </dl>
     </div>
 </body>
+
 </html>
